@@ -1,0 +1,58 @@
+*{
+    color: white;
+}
+
+h1{
+    margin-top: auto;
+    text-align: center;
+    color: green;
+    font-family: Arial, Helvetica;
+}
+
+body{
+    background-color: rgb(31, 27, 27);
+}
+
+
+table {
+    font-family: Arial, Helvetica;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    font-size: 100%;
+}
+
+td, th {
+    border: 1px solid rgb(19, 19, 19);
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+.blinkTime {
+    animation: blinkTime-animation 2s steps(5, start) infinite;
+    -webkit-animation: blinkTime-animation 2s steps(5, start) infinite;
+    color: yellow;
+}
+@keyframes blinkTime-animation {
+    to {
+      visibility: hidden;
+    }
+}
+@-webkit-keyframes blinkTime-animation {
+    to {
+      visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        font-size: 50%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+}

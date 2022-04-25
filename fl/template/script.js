@@ -1,0 +1,2 @@
+table = document.getElementsByClassName("table")
+
